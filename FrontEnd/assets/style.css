@@ -46,6 +46,13 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
+a{
+	text-decoration: none;
+	color : black;
+}
+a:hover{
+	color : #B1663C;
+}
 /** end reset css**/
 body {
 	max-width: 1140px;
@@ -57,6 +64,9 @@ header {
 	display: flex;
 	justify-content: space-between;
 	margin: 50px 0
+}
+.pageActive{
+	font-weight: bold;
 }
 section {
 	margin: 50px 0
@@ -125,6 +135,34 @@ li:hover {
 	text-align: center;
 	margin-bottom: 1em;
 }
+/*
+	Filters
+*/
+.filters{
+	display: flex;
+	flex-direction: row;
+	gap : 10px;
+	justify-content: center;
+	margin-bottom: 50px;
+}
+.filterButton{
+	border : 1px solid #1D6154;
+	border-radius : 60px;
+	background-color: white;
+	color : #1D6154 ;
+	font-size: 16px;
+	font-weight: bold;
+	min-width : 100px;
+	padding : 10px;
+	padding-left : 15px;
+	padding-right : 15px;
+}
+.filterButton:hover{
+	background-color: #1D6154;
+	color : white;
+	cursor: pointer;
+}
+
 .gallery {
 	width: 100%;
 	display: grid;
@@ -179,6 +217,83 @@ input[type="submit"]{
 	text-align: center;
 	border-radius: 60px ;
 }
+
+/*
+	LOGIN
+*/
+
+
+#login{
+	width:50%;
+	margin: auto;
+	text-align : center;
+}
+.loginForm{
+	margin-top: 50px;
+	text-align: left;
+	display: flex;
+	flex-direction: column;
+}
+.loginForm input{
+	height: 50px;
+	width:100%;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+.loginForm label {
+	margin: 2em 0 1em 0;
+}
+.mdpOublie{
+	color:#1D6154;
+	text-decoration: underline;
+}
+
+
+
+
+
+/*.formulaire {
+	width: 50%;
+	margin: auto;
+	text-align: center;
+}
+#contact h2{
+	margin-bottom: 20px;
+}
+.formulaire form {
+	text-align: left;
+	margin-top:30px;
+	display: flex;
+	flex-direction: column;
+}
+.formulaire input {
+	height: 50px;
+	width:100%;
+	font-size: 1.2em;
+	border: none;
+	box-shadow: 0px 4px 14px rgba(0, 0, 0, 0.09);
+}
+.formulaire label {
+	margin: 2em 0 1em 0;
+}*/
+
+input[type="submit"]{
+	font-family: 'Syne';
+	font-weight: 700;
+	color: white;
+	background-color: #1D6154;
+	margin : 2em auto ;
+	width: 180px;
+	text-align: center;
+	border-radius: 60px ;
+}
+
+
+
+/*
+	FOOTER
+*/
 
 footer nav ul {
 	display: flex;
