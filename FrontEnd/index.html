@@ -8,17 +8,18 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Syne:wght@700;800&family=Work+Sans&display=swap" rel="stylesheet">
 	<meta name="description" content="">
-	<link rel="stylesheet" href="./assets/style.css">
-	<script type="module" src="works.js"></script>
+	<link rel="stylesheet" href="./assets/css/index_style.css">
+	<link rel="stylesheet" href="assets/css/form_style.css">
+	<script type="module" src="assets/js/index.js"></script>
 </head>
 <body>
 <header>
 	<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
 	<nav>
 		<ul>
-			<li>projets</li>
+			<li><a href="#portfolio">projets</a></li>
 			<li>contact</li>
-			<li><a href="assets/pages/login.html">login</a></li>
+			<li><a href="pages/login.html">login</a></li>
 			<li><img src="./assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
@@ -38,10 +39,12 @@
 	<section id="portfolio">
 		<h2>Mes Projets</h2>
 		<div class="filters">
-			<button class="filterButton buttonTous">Tous</button>
-			<button class="filterButton buttonObjets">Objets</button>
-			<button class="filterButton buttonAppartements">Appartements</button>
-			<button class="filterButton buttonHotels">Hôtels & restaurants</button>
+			<!--
+			<button data-id="0" class="filterButton buttonTous active">Tous</button>
+			<button data-id="1" class="filterButton buttonObjets">Objets</button>
+			<button data-id="2" class="filterButton buttonAppartements">Appartements</button>
+			<button data-id="3" class="filterButton buttonHotels">Hôtels & restaurants</button>
+			-->
 		</div>
 		<div class="gallery">
 			
