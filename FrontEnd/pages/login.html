@@ -10,9 +10,8 @@
 	<meta name="description" content="">
 	<link rel="stylesheet" href="../assets/css/index_style.css">
 	<link rel="stylesheet" href="../assets/css/form_style.css">
-	<script type="module" src="../js/login.js"></script>
 </head>
-<body>
+<body class="body">
 <header>
 	<h1>Sophie Bluel <span>Architecte d'inteérieur</span></h1>
 	<nav>
@@ -20,7 +19,7 @@
 			<li><a href="../../index.html">projets</a></li>
 			<li>contact</li>
 			<li class="pageActive">login</li>
-			<li><img src="../icons/instagram.png" alt="Instagram"></li>
+			<li><img src="../assets/icons/instagram.png" alt="Instagram"></li>
 		</ul>
 	</nav>
 </header>
@@ -31,11 +30,14 @@
 
 		<h2>Log In</h2>
 
-		<form method="get" action="#" class="loginForm">
+		<form id="loginForm" method="post" action="" class="loginForm">
+			<p id="incorrectPassword"></p>
+			
 			
 			<label for="emailLogin">E-mail</label>
 			<input type="email" name="emailLogin" id="emailLogin" required>
-		
+			
+			
 			<label for="passwordLogin">Mot de passe</label>
 			<input type="password" name="passwordLogin" id="passwordLogin" required>
 			
@@ -61,5 +63,7 @@
 		</ul>
 	</nav>
 </footer>
+
+<script src="../assets/js/login.js"></script>
 </body>
 </html>
